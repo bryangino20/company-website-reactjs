@@ -1,3 +1,6 @@
+// We split out the HTML into its own function to make it easier to read..
+
+
 function Contact() {
   return (
     <div className="container contact">
@@ -37,5 +40,7 @@ function Contact() {
       </div>
     </div>
   );
+
+  
 }
 export default Contact;
