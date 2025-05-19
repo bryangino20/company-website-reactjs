@@ -1,0 +1,61 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Space between cards */
+  align-items: stretch; /* Ensures all cards have the same height */
+  gap: 20px; /* Adds spacing between cards */
+  margin-bottom: 20px; /* Adds spacing between rows */
+  flex-wrap: wrap; /* Allows cards to wrap to the next row on smaller screens */
+}
+
+.card {
+  flex: 1; /* Ensures all cards take up equal space */
+  max-width: 300px; /* Optional: Set a consistent max width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd; /* Optional: Add a border for better visuals */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  padding: 20px;
+  background-color: #fff; /* Optional: Add a background color */
+  margin: 10px; /* Adds spacing between cards */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto; /* Ensures the image scales properly */
+  object-fit: cover; /* Ensures the image fills its container */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .flex-container {
+    justify-content: center; /* Center cards on smaller screens */
+    gap: 10px; /* Reduce spacing between cards */
+  }
+
+  .card {
+    max-width: 100%; /* Allow cards to take full width on smaller screens */
+    margin: 10px 0; /* Add vertical spacing between cards */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}

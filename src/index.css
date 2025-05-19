@@ -339,10 +339,14 @@ footer ul li a {
 
 
 }
+.services {
+  margin-bottom: 2rem; /* Reduce the bottom margin */
+}
 ul li a {
   cursor: pointer;
 }
 .about {
+  margin-top: 2rem; /* Reduce the top margin */
   margin-bottom: 15rem;
 }
 .card-cover {
@@ -576,4 +580,26 @@ ul li a {
 }
 .mb-1 {
   margin-bottom: 1rem!important;
+}
+
+
+
+.subheader {
+  font-size: 1.2rem;
+  color: white; /* Lighter color for better visibility */
+  font-style: bold;
+  font-weight: 600;
+  text-align: center;
+  z-index: 1;
+  margin-top: 10px;
+  line-height: 1.5;
+  padding: 0 10%; /* Reduce padding to limit the width */
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .subheader {
+    font-size: 1rem; /* Slightly smaller font size for mobile */
+    padding: 0 5%; /* Reduce padding further for smaller screens */
+  }
 }

@@ -1,0 +1,94 @@
+/* General container styling */
+.about {
+  margin-top: 20px; /* Reduced margin to close the gap between sections */
+  padding: 20px;
+}
+
+/* About container styling */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack content vertically by default */
+  padding: 0px;
+  margin-top: 20px; /* Reduced margin to close the gap */
+}
+
+/* About content styling */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Image container */
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Text container */
+.about-text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Align text to the left */
+  padding: 10px 20px; /* Reduce padding to shift content up */
+  margin-top: -20px; /* Negative margin to move the text up */
+}
+
+.about-title {
+  font-size: 2.5rem; /* Larger title */
+  font-weight: bold;
+  margin-bottom: 10px; /* Reduce bottom margin to bring the description closer */
+  color: #333; /* Adjust color to match your theme */
+  text-align: center; /* Center the title */
+  width: 100%; /* Ensure the title spans the full width for proper centering */
+}
+
+.about-text {
+  font-size: 1.3rem; /* Larger text */
+  line-height: 1.8;
+  color: #555; /* Adjust color for readability */
+  text-align: center;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .about {
+    padding: 10px;
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack image and text vertically */
+    gap: 10px;
+  }
+
+  .about-title {
+    font-size: 2rem; /* Slightly smaller title for mobile */
+    text-align: center; /* Center title on mobile */
+  }
+
+  .about-text {
+    font-size: 1.1rem; /* Slightly smaller text for mobile */
+    text-align: left; /* Align text to the left for better readability */
+  }
+
+  .about-image {
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
+}
